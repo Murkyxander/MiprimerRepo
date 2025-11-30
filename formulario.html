@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+
+<body>
+
+    <form action="enviar.php" method="get" autocomplete="on"   id="formulario" name="formulario">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required maxlength="10" minlength="6">
+            </label>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" >
+            <input type="number" id="edad" name="edad" placeholder="Edad" min="3" max="98" step="1">
+            <input type="radio" id="genero"    name="genero" placeholder="Escribe aquí tu genero">
+            <input type="date" id="date"    name="fecha">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos personales</legend>
+            <label>Cuál es tu comida favorita:</label>
+        <input type="text" id="Comida" name="Comida">
+        <label>Dinos tu animal preferido</label>
+        <input type="text" id="animales" name="animales">
+        <label>Cuál es tu color favorito</label>
+        <input type="text" id="colores" name="colores">
+        
+        </fieldset>
+        <input type="submit">
+
+
+        <div>
+            <label for="maniana">Mañana</label>
+            <input type="radio" id="maniana" name="turno" value="mañana">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <laber for="noche">Noche</label>
+            <input type="radio" id="noche" name="turno" value="noche">
+
+        </div>
+
+        <div>
+            <label for="online">Online</label>
+            <input type="checkbox" id="online" name="online" value="si">
+            <label for="presencial">Presencial</label>
+            <input type="checkbox" id="presencial" name="presencial" value="si">
+            <label for="hibrido">Híbrido</label>
+            <input type="checkbox" id="hibrido" name="hibrido" value="si">
+        </div>
+
+
+        <select id="donde" name="donde">
+            <option value="Madrid">Madrid</option>
+            <option value="EL congo">El CONGO</option>
+            <option value="Taka waka">Taka Waka</option>
+        </select>
+
+        <input type="text" id="tema" name="tema" list="lista-temas">
+
+        <datalist id="lista-temas" name="lista-temas">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            
+
+        </datalist>
+
+
+    </form>    
+</body> 
+</html>

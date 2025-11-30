@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo bicicleta</title>
+</head>
+<body>
+    <h2>Formulario para robo de bicicletas</h2>
+    <form action="#" method="post" autocomplete="off" id="denuncia" name="denuncia">
+        <fieldset>
+                <div>
+                    <label for="date">Día del robo</label>
+                    <input type="date" id="date" name="date" tabindex="1">
+                </div>
+
+                <div>
+                    <label for="time">Hora del robo</label>
+                    <input type="time" id="time" name="time" tabindex="2">
+                </div>
+
+                <div>
+                    <label for="color">Color de la bicicleta</label>
+                    <input type="color"  id="color" name="color" tabindex="3" placeholder="Rojo, verde etc..">
+                </div>
+
+                <div>
+                    <label for="price">Precio de la bicicleta</label>
+                    <input type="range" id="price" name="price" tabindex="4" step="10" min="10" max="9999">
+               </div>
+       
+
+                <div>
+                    <label for="type">Tipo de bicicleta:</label>
+                    <select name="type" id="type" tabindex="5"> 
+                        <optgroup label="Urbana">
+                            <option value="1">Clasica</option>
+                            <option value="2">Plegable</option>
+                            <option value="3">Electrica</option>
+                            <option value="4">Commuter</option>
+                        </optgroup>
+
+                        <optgroup label="Montaña">
+                            <option value="5">Sport</option>
+                            <option value="6">Trail o Hard trail</option>
+                            <option value="7">XC o Cross</option>
+                        </optgroup>
+
+                        <optgroup label="Carreras">
+                            <option value="8">Gran fondo</option>
+                            <option value="9">Racing</option>
+                            <option value="10">Aero</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="">Accesorios</label>
+                    <select name="accesories" id="accesories" tabindex="6" multiple>
+                        <option value="1">Ruedines</option>
+                        <option value="2">Hinchadores</option>
+                        <option value="3">Rodillos</option>
+                        <option value="4">Bomba de aire</option>
+                        <option value="5">Alforja</option>
+                        <option value="6">Silla portabebés</option>
+                    </select>
+                </div>
+        
+
+                <div>
+                    <label for="brand">¿Qué marca era?</label>
+                    <input id="brand" name="brand" tabindex="7" placeholder="Ej: HP" list="brands">
+
+                    <datalist id="brands">
+                        <option value="specialized">
+                        <option value="trek">
+                        <option value="merida">
+                        <option value="scott">
+                        <option value="giant">
+                        <option value="cube">
+                        <option value="lapierre">
+                        <option value="orbea">
+                        <option value="cannondale">
+                        <option value="bmc">
+                        <option value="canyon">
+
+                    </datalist>
+                </div>
+ </fieldset>
+
+    
+
+
+
+    </form>
+
+
+
+
+    
+</body>
+</html>
