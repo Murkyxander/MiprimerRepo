@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo, lo que se ve arriba en el buscador</title>
+</head>
+<body>
+    </p>
+    abbr: abreviatura<br>
+    <abbr title="Concha su mae">CSM</abbr>
+
+    p: parrafo
+    <p>Esto es un parrafo, no importa si el marcador está al final o en un espacio abajo
+    </p>
+
+    <p>strong:<br>
+    <strong>PAra marcar una palabra, no lo mismo que enfatizar</strong><br>
+    </p>
+
+    <p>i:cursiva<br>
+    <i>SOy cursivaa</i><br>
+    </p>
+
+    <p>b:negrita<br>
+    <b>Soy negro como un escarabajo</b><br>
+    </p>
+
+    <p>ol:lista enumerada<br>
+    li:siempre dentro de la lista, nos indica los elementos de la lista 
+    <ol>
+        <li> soy el uno</li>
+        <li>soy el dos y asi</li>
+    </ol>
+    </p>
+
+    <p>ul:lista sin numerar, con puntos<br>
+    li: siempre presente dentro de las listas
+    <ul> 
+        <li>soy la bola</li>
+        <li>yo soy bola siguiente</li>
+    </ul></p>
+    time:pues eso, digo la hora, fecha o lo que quieras
+    <p><time datatime="2025-14-10">Hoy es 14 de octubre de 2025</time>
+
+    </p>
+
+    <p>
+        dt:termino que vamos a definir<br>
+        dd:definicion del termino<br>
+        <dl> Es cuando son varios terminos, ejemplo un glosario o hay varias definiciones<br>
+
+            <dt>Arepa:</dt>
+            <dd>Cosa muy rica que se come en colombia o venezuela wey</dd>
+
+            <dt>Cachapa</dt>
+            <dd>comida muy rica con maiz proveniente de venezuela</dd>
+
+        </dl>   
+
+    </p>
+
+    <p>header: es el encabezado de la pagina<br>
+        <header>    </header>
+    </p>
+
+    <p>nav:su contenido pertenece a conjunto de elementos de navegacion<br>
+        <nav></nav>
+    </p>
+
+    <p>main:indica el cuerpo principal de la pagina, es decir el cuerpo<br>
+        <main></main>
+    </p>
+
+    <p>section:tienen relacion con la tematica principal de la pagina html<br>
+        <section></section>
+    </p>
+
+    <p>article:definen zonas independientes entre si de mi pagina, tener una pagina de animales, y hablar de diferentes<br>
+        <article> </article>
+    </p>
+
+    <p>aside:define area de informacion secundaria de la pagina
+        <aside></aside>
+    </p>
+
+    <p>footer: informacion corporativa, en los ultimos años la  tendencia es usar varios</p>
+
+
+    <p>
+        añadir imagenes: PAra esto se procede a img src="la ruta de la foto" y alt="a cuando no se ve la foto, el texto"<br>
+        
+    </p>
+
+    <p>
+        figcaption id: se usa especificamente para señalar que es el pie de pagina
+    </p>
+
+    <p><br>
+        video y audio: para añadir video es; video src "donde esté el video"
+        <ol>
+        Tenemos varias etiquetas
+            <li> <b>autoplay:</b>que inicia automaticamente</li>
+            <li><b>controls:</b> añade el panel de botones al video</li>
+            <li><b>loop:</b> para que el video se repita</li>
+            <li><b>preload:</b> Tiene 3 valores, auto, metadata, y none.</li>
+                            <ul>
+                                <li><b>auto:</b>video se precarga lo suficiente para reproducir el video sin interrupciones</li>
+                                <li><b>metadata:</b>tendra que consultar al video si tiene metadatos para capturarlos </li>
+                                <li><b>none:</b>no queremos precarga </li>
+                            </ul>
+            <li><b>poster:</b>lo que hace es  añadir una imagen estatica antes de iniciar el video</li>                
+        </ol>
+    </p>
+    <p>Ahra vamos con tablas, calendario o etc</p>
+        <ul>
+            <li><b>table:</b>Para indicar que es una tabla<br></li>
+             <li><b>tr:</b>Para insertar filas <br></li>
+             <li><b>th:</b>Para insertar celdas de ENCABEZADO  <br></li>
+            <li><b>td:</b>Para insertar celdas de DATOS<br></li>
+            <li><b>Colspan:</b>Se usa para indicar que la fila ocupa tantas columnas como queramos.  colspan="5"</li>
+            <li><b>rowspan</b>SE usa para indicar que UNA fila ocupe las que queramos. rowspan="x"</li>
+
+        </ul>
+
+
+
+        <p>Vamos con los input, sirven para que los usuarios envien datos; formularios, encuentas, subscripciones etc</p>
+            <ul><p>tiene varios atributos</p>
+                <li><b>action:</b> </li>
+                <li><b>method:</b> Tiene 2 valores</li>
+                    <ul>
+                         <li><b>get:</b>la informacion envia los datos de forma que lo puedan ver todos los usuarios </li>
+                         <li><b>post:</b>envia los datos encapsulados de forma interna, de modo que nadie tendra acceso a ellos </li>
+                    </ul>
+                <li><b>autocomplete:</b>es booleano, por defecto está en "on" asi que si no queremos tenemos que darle off</li>
+                <li><b>id:</b>lo usaremos para acceder al elemento a traves del front</li>
+                <li><b>name:</b>lo usaremos para accerder al elemento a través del back</li>
+                <li><b>placeholder:</b>Indicaremos el texto que querramos dentro de donde se rellenan los datos</li>
+                <li><b>file:</b>Para subir un archivo a la pagina, imagen o etc</li>
+                <li><b>label:</b>HAce referencia al <b>id</b> relacionamos, es cuando en lo formularios vemos, Nombre: y podemos rellenar</li>
+                <li><b>fieldset</b>Nos permite agrupar elementos dentro del formulario</li>
+                <li><b>legend</b>Le da titulo que queramos al fieldset</li>
+                <li><b>Required</b>Indica que ese campo es obligatorio</li>
+                <li><b>maxlenght</b>Indicamos cuantos caracteres queremos que sean los maximos</li>
+                <li><b>minlenght</b>Indicamos cuantos caracteres queremos que sean los minimos</li>
+                <li><b>readonly</b>Para que el usuario lea algo solamente, no podrá interactuar con el</li>
+                <li><b>disabled</b>Lo usaremos para desactivar un atributo</li>
+                
+            
+            
+            
+            
+            </ul>
+</body>
+</html>
+
